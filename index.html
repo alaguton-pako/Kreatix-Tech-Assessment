@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KreatixTech</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/ec08909fa5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="heroSection">
+      <nav>
+        <div class="logo">crowdfund</div>
+
+        <label for="click" class="menu_button">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" id="click" />
+
+        <ul class="nav-link-wrapper">
+          <li><a href="/index.html">About</a></li>
+          <li><a href="/index.html">Discover</a></li>
+          <li><a href="/index.html">Get Started</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="overallContainer">
+      <section class="firstCard">
+        <img
+          src="./images/ADENIGBA AHMED ADEFOLARIN.jpg"
+          alt="an icon should be here"
+        />
+
+        <h1 class="firstCardcontainerTitle">
+          Mastercraft Bamboo Monitor Riser
+        </h1>
+
+        <p class="firstCardParagraph">
+          A beautiful and handcrafted monitor stand to reduce neck and eye
+          strain.
+        </p>
+
+        <div class="firstCardButtons">
+          <div class="backProjectBtn"><a href="#"> Back this project </a></div>
+          <div class="ribbonBookmark">
+            <span class="ribon"> <i class="fa-solid fa-ribbon"></i> </span
+            >Bookmark
+          </div>
+        </div>
+      </section>
+
+      <section class="secondCard">
+        <div class="metrics">
+          <div class="forEach">
+            <span class="fig"> $89,914 </span
+            ><span class="figText">of $100,000 backed</span>
+          </div>
+
+          <div class="forEach">
+            <span class="fig"> 5,007 </span
+            ><span class="figText">total backers</span>
+          </div>
+
+          <div>
+            <span class="fig"> 56 </span><span class="figText">days left</span>
+          </div>
+        </div>
+        <span class="progressBar">
+          <progress
+            id="html-progress"
+            class="stack-progress"
+            value="90"
+            max="100"
+          >
+            90
+          </progress>
+        </span>
+      </section>
+
+      <section class="thirdCard">
+        <h3 class="aboutTitle">About this project</h3>
+
+        <p class="aboutparagraph">
+          The Mastercraft Bamboo Monitor is a sturdy and stylish platform that
+          elevatesyour screen to a more comfortable viewing height. placing your
+          monitor at eye level has the potential to improve your posture and
+          make you more comfortable while at work, helping you stay focused on
+          the task at hand.
+        </p>
+
+        <p class="aboutparagraph2">
+          Featuring artisan craftmanship, the simplicity of design creates extra
+          desk spave below your computer to allow notepads, pens, and USB sticks
+          to be stored under the stand
+        </p>
+
+        <div class="forAddingNewCard">
+          <input
+            class="inputField"
+            type="text"
+            id="newPledgeInput"
+            placeholder="Enter a pledge to add to card"
+          />
+          <span class="addBtn" id="add-Btn">Add New Card</span>
+        </div>
+
+        <div id="parentContainer">
+          <section class="thirdCardInfoCards">
+            <div class="thirdCardInfoCardsTitlepledge">
+              <p class="innerTitle">Bamboo Stand</p>
+              <p class="pledges">pledge $25 or more</p>
+            </div>
+
+            <p class="thirdCardInfoCardsparagraph">
+              You get an egronomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you will be able to added
+              to a special Blacker member list.
+            </p>
+
+            <div class="amountLeftReward">
+              <p class="amountleft">101<span class="Left">left</span></p>
+              <div class="rewardDelete">
+                <p class="reward">Select Reward</p>
+                <p class="deleteButton"><i class="fa-solid fa-trash"></i></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="thirdCardInfoCards">
+            <div class="thirdCardInfoCardsTitlepledge">
+              <p class="innerTitle">Black Edition Stand</p>
+              <p class="pledges">pledge $75 or more</p>
+            </div>
+
+            <p class="thirdCardInfoCardsparagraph">
+              You get an egronomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you will be able to added
+              to a special Blacker member list.
+            </p>
+
+            <div class="amountLeftReward">
+              <p class="amountleft">64<span class="Left">left</span></p>
+              <p class="reward">Select Reward</p>
+            </div>
+          </section>
+
+          <section class="thirdCardInfoCards" id="outOfStock">
+            <div class="thirdCardInfoCardsTitlepledge">
+              <p class="innerTitle">Mahogany Special Edition</p>
+              <p class="pledges">pledge $200 or more</p>
+            </div>
+
+            <p class="thirdCardInfoCardsparagraph">
+              You get an egronomic stand made of natural bamboo. You've helped
+              us launch our promotional campaign, and you will be able to added
+              to a special Blacker member list.
+            </p>
+
+            <div class="amountLeftReward">
+              <p class="amountleft">0<span class="Left">left</span></p>
+              <p class="reward">Out of stock</p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
