@@ -12,8 +12,6 @@ body {
 }
 
 nav {
-  position: fixed;
-  width: 100%;
   padding-top: 40px;
   display: flex;
   justify-content: space-around;
@@ -26,7 +24,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 400px;
 }
 
 
@@ -44,7 +42,7 @@ nav .nav-link-wrapper li {
 nav .nav-link-wrapper li a {
   text-decoration: none;
   font-size: 20px;
-  color: red;
+  color: #fff;
   font-weight: 400;
   border-radius: 5px;
   padding: 5px 20px 10px;
@@ -55,22 +53,10 @@ nav .nav-link-wrapper li a {
 nav .logo {
   font-size: 24px;
   font-weight: 700;
-  color: red;
+  color: #fff;
   margin-top: 10px;
 }
 
-
-.menu_button i{
-  margin-top: 20px;
-  cursor: pointer;
-  font-size: 25px;
-  color: #fff;
-  display: none;
-}
-
-#click {
-  display: none;
-}
 
 html {
   scroll-behavior: smooth;
@@ -238,6 +224,7 @@ img {
 
 .aboutTitle{
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .aboutparagraph{
@@ -351,40 +338,119 @@ img {
 
 
 @media (max-width: 800px) {
-  nav .menu_button i{
-    display: block;
+  nav {
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
+
+  nav .nav-link-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .nav-link-wrapper li {
+    list-style: none;
+    margin-top: 5px;
+  }
+  
+  nav .nav-link-wrapper li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 200;
+    padding: 5px;
+  }
+  
   nav .logo {
-    /* margin-top: 15px; */
-    color: red;
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 10px;
   }
 
-  nav .nav-link-wrapper{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #fff;
-    height: 100vh;
+  .firstCard {
     width: 100%;
-    display: block;
+    border-radius: 15px;
+    padding: 20px 50px;
+    margin-top: 100px;
+    position: relative;
+    background: rgba(255, 255, 255);
+    justify-content: center;
     text-align: center;
-    transition: all 0,3s ease;
+    margin-bottom: 30px;
+    height: 500px;
   }
 
-  #click:checked ~ .nav-link-wrapper{
-    left: 0%;
-  }
-
-  nav .nav-link-wrapper li{
-    margin: 40px 0;
-  }
-
-  nav .nav-link-wrapper li a{
-    font-size: 20px;
+  .firstCardButtons {
     display: block;
   }
+
+  .backProjectBtn {
+    padding: 10px;
+    background-color: rgba(57, 181, 171);
+    border-radius: 8px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .ribon {
+    padding: 10px;
+    background-color: rgba(47, 47, 47);
+    border-radius: 50%;
+  }
+
+  .secondCard {
+    width: 100%;
+    text-align: center;
+    background-color: #ffff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 50px;
+    height: 350px;
+  }
+  
+  .metrics {
+    display: block;
+  }
+
+  .progressBar {
+    margin-top: 30px;
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .forAddingNewCard{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+  
+.addBtn{
+  font-size: 12px;
+  width: 30%;
+  text-align: center;
+  background-color: rgb(60, 180, 171);
+  padding: 15px;
+  cursor: pointer;
+  padding: 8px 5px 8px 5px;
+}
+
+.reward{
+  font-size: 12px;
+  padding: 5px 8px 5px 8px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(60, 180, 171);
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
 }
 
